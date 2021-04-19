@@ -108,20 +108,7 @@ namespace Mysaper
                     images[i++] = FindNeededImage(k, j);
                 }
             }
-            /*images[0] = FindNeededImage(0, 0);
-            images[1] = FindNeededImage(1, 0);
-            images[2] = FindNeededImage(2, 0);
-            images[3] = FindNeededImage(3, 0);
-            images[4] = FindNeededImage(4, 0);
-            images[5] = FindNeededImage(0, 1);
-            images[6] = FindNeededImage(1, 1);
-            images[7] = FindNeededImage(2, 1);
-            images[8] = FindNeededImage(3, 1);
-            images[9] = FindNeededImage(4, 1);
-            images[10] = FindNeededImage(0, 2);
-            images[11] = FindNeededImage(1, 2);
-            images[12] = FindNeededImage(2, 2);
-            images[13] = FindNeededImage(3, 2);*/
+          
             ConfigureMapSize(current);
             InitMap();
             InitButtons(current);
