@@ -129,7 +129,7 @@ namespace Mysaper
             Invoke(new Action(() => //вызываем события на таймер
             {
                 msec += 1;
-                if (msec == 62)
+                if (msec == 60)
                 {
                     msec = 0;
                     sec += 1;
