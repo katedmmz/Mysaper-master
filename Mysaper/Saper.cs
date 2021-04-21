@@ -60,8 +60,6 @@ namespace Mysaper
         {
             current.Width = widthhh;
             current.Height = heighttttt;
-            //current.Width = width * cellSize + 20;
-            //current.Height = heigth * cellSize + 73;
         }
         // Создание карты
         private static void InitMap()
@@ -74,7 +72,7 @@ namespace Mysaper
                 }
             }
         }
-        // Создание кнопок-квадратиков
+        // Создание кнопок
         private static void InitButtons(Form current)
         {
             for (int i = 0; i < heigth; i++)
@@ -128,7 +126,7 @@ namespace Mysaper
         }
         private void OnTimeEvent(object sender, ElapsedEventArgs e)
         {
-            Invoke(new Action(() =>
+            Invoke(new Action(() => //вызываем события на таймер
             {
                 msec += 1;
                 if (msec == 62)
@@ -385,7 +383,6 @@ namespace Mysaper
             GameOver=true;
             ShowAllBombs(iButton, jButton);
             gametimer.Stop();
-            //MessageBox.Show("Поражение!");//по нажатию на кнопку Да, выводить новую игру
             DialogResult res = MessageBox.Show("Начать заново?","Вы проиграли", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
@@ -409,7 +406,6 @@ namespace Mysaper
                     }
                 }
             }
-            //GameOver = true;
         }
         // Событие на победу
         private static void OnWin(int iButton, int jButton)
@@ -431,8 +427,6 @@ namespace Mysaper
             {
                 File.WriteAllLines("Records.txt", records);
             }
-
-            //MessageBox.Show("Вы победили, ура!");
             DialogResult res = MessageBox.Show("Желаете сыграть еще раз?", "Ура, вы победили!", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
@@ -452,7 +446,6 @@ namespace Mysaper
                     btnEnabled[i, j] = false;
                 }
             }
-            //GameOver = true;
         }
         // Сброс параметров игры
         private static void resetGame()

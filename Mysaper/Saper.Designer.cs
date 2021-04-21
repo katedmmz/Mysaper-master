@@ -148,7 +148,7 @@
             // HighRecords
             // 
             this.HighRecords.Name = "HighRecords";
-            this.HighRecords.Size = new System.Drawing.Size(224, 26);
+            this.HighRecords.Size = new System.Drawing.Size(177, 26);
             this.HighRecords.Text = "High records";
             this.HighRecords.Click += new System.EventHandler(this.HighRecords_Click);
             // 
@@ -187,6 +187,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 519);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
